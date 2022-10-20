@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+
+:root{
+    --cor0: #333E68;
+    --cor1:#D99C44;
+    --cor2:#707A9E;
+    --borda:#EBEBEB;
+    --noticia: #FFF9EF;
+} 
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    color: #ffffff;
+    background-color: var(--cor0);
+    border-bottom: 3px solid var(--cor1);
+}     
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    color: #ffffff;
+    background-color: var(--cor0);
+    border-bottom: 3px solid var(--cor1);
+    width: auto;
+}    
+section img{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.subilinhado{
+    text-decoration: underline;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(238, 67, 67);
+}
+nav a {
+    color: black;
+}
+section a{
+    color: black;
+}
+li{
+    border: 3px solid var(--borda);
+}
+p{
+    text-align: justify;
+}
+.noticias{
+    height: auto;
+    background-color: var(--noticia);
+}
+.footer1{
+text-align: end;
+}    
+@media (max-width:900px){
+    body{ 
+        center;
+    }
+    header{
+        width: auto;
+        font-size: 13px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .menu ul ul{
+        position: absolute;
+        visibility: hidden;
+        display: block;
+    }
+    .menu ul li:hover ul{
+        visibility: visible;
+        padding-left: 0.5pt;
+        background-color: #FFFFFF;
+    }
+    .dec,.dec1{
+        max-width: 0px;
+        max-height: 0px;
+        visibility: hidden;
+        }
+        nav{
+            margin-top: 0px;
+        }
+        ul{
+            background-color:#949dc4;
+            display: flex;
+            justify-content: space-around;
+            width: auto;
+            padding-right: 25px;
+            list-style: none;
+            text-align: center;
+        }
+        li{
+            padding:4px 3px;
+            width: 100%;
+        }
+        section h1{
+            margin: 0%;
+            font-size: 13px;
+            text-align: center;
+        }
+        article h2{
+            padding-top: 10px;
+            border-bottom: 2px solid red;
+        }
+        .ufs{
+            font-size: 11px;
+        }
+        footer{
+        background-color:#333E68; 
+        }   
+}
+
